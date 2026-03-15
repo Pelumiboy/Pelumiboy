@@ -1,31 +1,172 @@
- body{
-font-family: Arial, sans-serif;
-background:#f4f4f4;
-padding:40px;
-text-align:center;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+.page-border{
+padding:6px;
+background:linear-gradient(135deg,#7b5cff,#3f8cff);
+min-height:100vh;
 }
 
-table{
-width:70%;
-margin:auto;
-border-collapse:collapse;
+.container{
 background:white;
+display:flex;
+height:100vh;
+border-radius:12px;
+overflow:hidden;
 }
 
-th, td{
-padding:12px;
-border:1px solid #ddd;
+body{
+height:100vh;
+background:#f4f6fa;
 }
 
-th{
-background:#4CAF50;
+/* LEFT SIDE */
+
+.left{
+flex:1;
+background:linear-gradient(135deg,#0b1b35,#020c1b);
 color:white;
+padding:70px;
+display:flex;
+flex-direction:column;
+justify-content:center;
 }
 
-tr:nth-child(even){
-background:#f2f2f2;
+.logo{
+font-weight:600;
+margin-bottom:40px;
+font-size:18px;
 }
 
-tr:hover{
-background:#ddd;
+.logo i{
+margin-right:8px;
+color:#3f8cff;
+}
+
+.left h1{
+font-size:42px;
+line-height:1.3;
+max-width:450px;
+}
+
+.left span{
+color:#3f8cff;
+}
+
+.desc{
+margin-top:20px;
+opacity:0.85;
+max-width:430px;
+}
+
+.cards{
+display:flex;
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,0.07);
+padding:25px;
+border-radius:12px;
+width:190px;
+}
+
+.card i{
+font-size:20px;
+color:#3f8cff;
+margin-bottom:10px;
+}
+
+.card h2{
+font-size:22px;
+}
+
+footer{
+margin-top:80px;
+font-size:12px;
+opacity:0.6;
+}
+
+
+/* RIGHT SIDE */
+
+.right{
+flex:1;
+background:#ffffff;
+padding:70px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.right h2{
+font-size:34px;
+margin-bottom:5px;
+}
+
+.sub{
+margin-bottom:30px;
+color:#666;
+max-width:350px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+label{
+font-size:14px;
+font-weight:500;
+}
+
+input{
+padding:14px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.check{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+margin-top:10px;
+}
+
+.check a{
+color:#3f8cff;
+text-decoration:none;
+}
+
+button{
+margin-top:15px;
+padding:14px;
+background:#081428;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#142b55;
+}
+
+.login{
+margin-top:20px;
+font-size:14px;
+}
+
+.login a{
+color:#3f8cff;
+text-decoration:none;
 }
